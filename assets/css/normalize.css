@@ -1,0 +1,32 @@
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    line-height: 1.357;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+button, label, input, select, progress, meter {
+    font-family: inherit;
+}
+input, button {
+    -webkit-appearance: none;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #041c42;
+    overflow-x: hidden;
+}
+a {
+    color: #ffffff;
+}

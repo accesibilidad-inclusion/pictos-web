@@ -1,34 +1,3 @@
-/*Normalize*/
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 16px;
-    line-height: 1.357;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-button, label, input, select, progress, meter {
-    font-family: inherit;
-}
-input, button {
-    -webkit-appearance: none;
-}
-body {
-    min-height: 100vh;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #041c42;
-    overflow-x: hidden;
-}
-a {
-    color: #ffffff;
-}
-
 /*General*/
 .container-fluid {
     max-width: 1290px;
@@ -74,6 +43,8 @@ a {
 }
 .home-header__logo {
     margin-top: 2rem;
+    max-width: 610px;
+    width: 100%;
 }
 .home-header__description {
     font-size: 2rem;
@@ -227,6 +198,9 @@ a {
     display: block;
     max-width: 31rem;
     margin: 0 auto;
+}
+.home-footer__link:hover {
+    opacity: 0.8;
 }
 .home-footer__label {
     font-size: 1.5rem;
