@@ -134,7 +134,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
-@media screen and ( min-width: 640px ) {
+@media screen and ( min-width: 590px ) {
     .home-benefits__list { 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -271,6 +271,7 @@
     .home-benefits__circle {
         height: 260px;
         width: 260px;
+        padding: 1.5rem;
     }
     .home-benefits__description, .home-footer__link, .home-footer__label, .home-footer__btn {
         font-size: 1.3rem;
