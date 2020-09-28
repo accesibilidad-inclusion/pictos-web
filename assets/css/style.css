@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 780px;
 }
 .home-header .container-fluid {
     padding-top: 1rem;
@@ -232,6 +233,7 @@
 @media screen and ( max-width: 767px ) {
     .home-header {
         background-size: cover;
+        min-height: 600px;
     }
     .home-header .container-fluid {
         max-width: 500px;
@@ -254,6 +256,7 @@
     }
     .home-function__check-out {
         font-size: 1.3rem;
+        padding-bottom: 1rem;
     }
     .home-function__content {
         padding-top: 3rem;
@@ -280,6 +283,9 @@
     .container-fluid {
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+    .home-header {
+        min-height: 520px;
     }
     .home-header .container-fluid {
         max-width: 350px;
