@@ -12,7 +12,7 @@
 .home-header {
     background-image: url('../../assets/img/city.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-position: center top;
     text-align: center;
     height: 100vh;
@@ -20,6 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.home-header .container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .home-header:after {
     content: '';
@@ -222,4 +226,69 @@
 }
 .home-footer__btn:hover {
     opacity: 0.8;
+}
+
+/*móvil*/
+@media screen and ( max-width: 767px ) {
+    .home-header {
+        background-size: cover;
+    }
+    .home-header .container-fluid {
+        max-width: 500px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .home-header__title {
+        font-size: 2rem;
+    }
+    .home-header__description {
+        font-size: 1.3rem;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+    .home-header__btn {
+        font-size: 1.3rem;
+    }
+    .home-function__description {
+        font-size: 1.3rem;
+    }
+    .home-function__check-out {
+        font-size: 1.3rem;
+    }
+    .home-function__content {
+        padding-top: 3rem;
+    }
+    .home-function__image {
+        max-height: 300px;
+        flex: auto;
+    }
+    .home-benefits {
+        margin-top: 4rem;
+    }
+    .home-benefits__circle {
+        height: 260px;
+        width: 260px;
+    }
+    .home-benefits__description, .home-footer__link, .home-footer__label, .home-footer__btn {
+        font-size: 1.3rem;
+    }
+    .home-benefits__image {
+        max-width: 300px;
+    }
+}
+@media screen and ( max-width: 440px ) {
+    .container-fluid {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .home-header .container-fluid {
+        max-width: 350px;
+    }
+    .home-header__title {
+        font-size: 1.4rem;
+    }
+    .home-header__btn, .home-header__description, .home-function__description, .home-function__check-out,
+    .home-footer__link, .home-footer__label, .home-footer__btn {
+        font-size: 1.2rem;
+    }
 }
