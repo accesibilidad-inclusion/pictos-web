@@ -150,6 +150,10 @@
     .home-benefits__list {
         display: flex;
         flex-wrap: wrap;
+        gap: initial;
+    }
+    .home-benefits__circle + .home-benefits__circle {
+        margin-top: 1rem;
     }
 }
 .home-benefits__circle {
@@ -317,10 +321,13 @@
         text-align: center;
     }
     .home-benefits__circle {
-        height: 250px;
-        width: 250px;
+        height: 235px;
+        width: 235px;
+    }
+    .home-benefits__circle + .home-benefits__circle {
+        margin-top: 0.6rem;
     }
     .home-benefits__description {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
