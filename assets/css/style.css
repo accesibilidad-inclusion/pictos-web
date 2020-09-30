@@ -102,6 +102,12 @@
         padding-top: 0;
     }
 }
+.home-function__title {
+    font-size: 3rem;
+    color: #ffffff;
+    padding-bottom: 2.2rem;
+    padding-top: 1rem;
+}
 .home-function__description {
     font-size: 2rem;
     color: #ffffff;
@@ -125,6 +131,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+.home-benefits__title {
+    font-size: 3rem;
+    color: #041c42;
+    font-weight: 700;
+    padding-bottom: 2.2rem;
 }
 .home-benefits__list {
     list-style: none;
@@ -251,6 +263,11 @@
     .home-header__btn {
         font-size: 1.3rem;
     }
+    .home-function__title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+    }
     .home-function__description {
         font-size: 1.3rem;
     }
@@ -267,6 +284,10 @@
     }
     .home-benefits {
         margin-top: 4rem;
+    }
+    .home-benefits__title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
     }
     .home-benefits__circle {
         height: 260px;
@@ -288,10 +309,13 @@
     .home-header {
         min-height: 520px;
     }
+    .home-header__logo {
+        margin-top: 1rem;
+    }
     .home-header .container-fluid {
         max-width: 350px;
     }
-    .home-header__title {
+    .home-header__title, .home-function__title, .home-benefits__title {
         font-size: 1.4rem;
     }
     .home-header__btn, .home-header__description, .home-function__description, .home-function__check-out,
