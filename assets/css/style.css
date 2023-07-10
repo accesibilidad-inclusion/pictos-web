@@ -12,7 +12,7 @@
 .home-header {
     background-image: url('../../assets/img/city.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-position: center top;
     text-align: center;
     height: 100vh;
@@ -20,6 +20,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 780px;
+}
+.home-header .container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .home-header:after {
     content: '';
@@ -97,6 +102,12 @@
         padding-top: 0;
     }
 }
+.home-function__title {
+    font-size: 3rem;
+    color: #ffffff;
+    padding-bottom: 2.2rem;
+    padding-top: 1rem;
+}
 .home-function__description {
     font-size: 2rem;
     color: #ffffff;
@@ -121,24 +132,28 @@
     background-size: cover;
     background-position: bottom;
 }
+.home-benefits__title {
+    font-size: 3rem;
+    color: #041c42;
+    font-weight: 700;
+    padding-bottom: 2.2rem;
+}
 .home-benefits__list {
     list-style: none;
     padding-left: 0;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 1rem;
 }
-@media screen and ( min-width: 640px ) {
-    .home-benefits__list { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+@media screen and ( max-width: 1280px ) {
+    .home-benefits__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: initial;
     }
-}
-@media screen and ( min-width: 1280px ) {
-    .home-benefits__list { 
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+    .home-benefits__circle + .home-benefits__circle {
+        margin-top: 1rem;
     }
 }
 .home-benefits__circle {
@@ -222,4 +237,97 @@
 }
 .home-footer__btn:hover {
     opacity: 0.8;
+}
+
+/*móvil*/
+@media screen and ( max-width: 767px ) {
+    .home-header {
+        background-size: cover;
+        min-height: 600px;
+    }
+    .home-header .container-fluid {
+        max-width: 500px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .home-header__title {
+        font-size: 2rem;
+    }
+    .home-header__description {
+        font-size: 1.3rem;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+    .home-header__btn {
+        font-size: 1.3rem;
+    }
+    .home-function__title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+    }
+    .home-function__description {
+        font-size: 1.3rem;
+    }
+    .home-function__content {
+        padding-top: 3rem;
+    }
+    .home-function__image {
+        max-height: 300px;
+        flex: auto;
+    }
+    .home-benefits {
+        margin-top: 4rem;
+    }
+    .home-benefits__title {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    .home-benefits__circle {
+        height: 260px;
+        width: 260px;
+        padding: 1.5rem;
+    }
+    .home-benefits__description, .home-footer__link, .home-footer__label, .home-footer__btn {
+        font-size: 1.3rem;
+    }
+    .home-benefits__image {
+        max-width: 300px;
+    }
+}
+@media screen and ( max-width: 440px ) {
+    .container-fluid {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .home-header {
+        min-height: 520px;
+    }
+    .home-header__logo {
+        margin-top: 1rem;
+    }
+    .home-header .container-fluid {
+        max-width: 350px;
+    }
+    .home-header__title, .home-function__title {
+        font-size: 1.4rem;
+    }
+    .home-header__btn, .home-header__description, .home-function__description,
+    .home-footer__link, .home-footer__label, .home-footer__btn {
+        font-size: 1.2rem;
+    }
+    .home-benefits__title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .home-benefits__circle {
+        height: 235px;
+        width: 235px;
+    }
+    .home-benefits__circle + .home-benefits__circle {
+        margin-top: 0.6rem;
+    }
+    .home-benefits__description {
+        font-size: 1.1rem;
+    }
 }
